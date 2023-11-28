@@ -43,6 +43,11 @@ header > nav > ul > li {
   cursor: pointer;
 }
 
+header > nav > ul > li > a{
+  text-decoration: none;
+  color: inherit;
+}
+
 .cont-container{
   min-height: 1000px;
 }
@@ -68,6 +73,7 @@ footer section ul li{
 footer section ul li a{
   cursor: pointer;
   text-decoration: none;
+  color: inherit;
 }
 
 .footer-text{
