@@ -43,6 +43,14 @@ header > nav > ul > li {
   cursor: pointer;
 }
 
+.cont-container{
+  min-height: 1000px;
+}
+
+footer{
+  border-top: #191a17 10px solid;
+}
+
 footer section{
   display: flex;
   justify-content: space-around;
@@ -50,6 +58,11 @@ footer section{
 
 footer section ul{
   list-style: none;
+}
+
+footer section ul li{
+  padding: 5px 0;
+  text-decoration: none;
 }
 
 footer section ul li a{
@@ -68,4 +81,8 @@ footer section ul li a{
 
 .footer-text > p{
   color: white;
+}
+
+.midia-icon{
+  max-width: 30px;
 }
