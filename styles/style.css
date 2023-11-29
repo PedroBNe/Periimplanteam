@@ -208,6 +208,35 @@ header > nav > ul > li > a{
   color: #FFF;
 }
 
+main section article h6{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main section article h6 section{
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+main section article h6 section img{
+  max-width: 20px;
+}
+
+.cards{
+  display: flex;
+  justify-content: center;
+  gap: 10%;
+}
+
+main > .cards > article{
+  max-width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 footer{
   background-color: var(--background-header);
 }
@@ -217,7 +246,7 @@ footer{
 }
 
 footer article h3{
-  color: var(--text-footer);
+  color: #FFF;
   font-weight: 700;
 }
 
@@ -234,13 +263,13 @@ footer section ul{
 footer section ul li{
   padding: 5px 0;
   text-decoration: none;
-  color: var(--text-footer);
+  color: #FFF;
 }
 
 footer section ul li a{
   cursor: pointer;
   text-decoration: none;
-  color: var(--text-footer);
+  color: #FFF;
 }
 
 .footer-text{
