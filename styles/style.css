@@ -10,7 +10,7 @@ body{
 }
 
 :root {
-  --background-header: #191a17;
+  --background-header: #353535;
   --primary-color: #00a295;
   --white: #FFF;
   --background-footer: #191a17;
@@ -21,9 +21,13 @@ header{
   display: flex;
   justify-content: space-between;
   width: 100%;
-  height: 50px;
-  position: relative;
+  height: 90px;
+  position: fixed;
   z-index: 999;
+  background-color: transparent;
+}
+
+.header-aplicado{
   background-color: var(--background-header);
 }
 
@@ -31,6 +35,10 @@ header{
   display: flex;
   align-items: center;
   margin-left: 20px;
+}
+
+.logo-header img{
+  height: 100%;
 }
 
 header > nav{
@@ -57,14 +65,15 @@ header > nav > ul > li > a{
 
 .slider{
   margin: 0 auto;
-  width: 80%;
-  height: 400px;
+  margin-bottom: 30px;
+  width: 100%;
+  height: 575px;
   overflow: hidden;
 }
 
 .slides{
   width: 400%;
-  height: 400px;
+  height: 100%;
   display: flex;
 }
 
@@ -80,13 +89,12 @@ header > nav > ul > li > a{
 
 .slide img{
   width: 100%;
-  border-radius: 10px;
   height: 100%;
 }
 
 .manual-navigation{
   position: absolute;
-  width: 80%;
+  width: 100%;
   margin-top: -40px;
   display: flex;
   justify-content: center;
@@ -134,8 +142,8 @@ header > nav > ul > li > a{
 
 .navigation-auto{
   position: absolute;
-  width: 80%;
-  margin-top: 360px;
+  width: 100%;
+  margin-top: 535px;
   display: flex;
   justify-content: center;
 }

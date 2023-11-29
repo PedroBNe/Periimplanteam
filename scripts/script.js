@@ -13,3 +13,8 @@ function nextImage(){
 
   document.getElementById("radio" + count).checked = true;
 }
+
+window.addEventListener("scroll", function() {
+  var header = document.getElementById("header");
+  header.classList.toggle("header-aplicado", window.scrollY > 0);
+});
