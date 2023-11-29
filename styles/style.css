@@ -11,8 +11,10 @@ body{
 
 :root {
   --background-header: #191a17;
-  --primary-color: #fff;
+  --primary-color: #00a295;
+  --white: #FFF;
   --background-footer: #191a17;
+  --text-footer: #357e79;
 }
 
 header{
@@ -43,7 +45,7 @@ header > nav > ul {
 
 header > nav > ul > li {
   padding-right: 20px;
-  color: var(--primary-color);
+  color: var(--white);
   font-weight: bold;
   cursor: pointer;
 }
@@ -55,7 +57,7 @@ header > nav > ul > li > a{
 
 .slider{
   margin: 0 auto;
-  width: 800px;
+  width: 80%;
   height: 400px;
   overflow: hidden;
 }
@@ -77,12 +79,14 @@ header > nav > ul > li > a{
 }
 
 .slide img{
-  width: 800px;
+  width: 100%;
+  border-radius: 10px;
+  height: 100%;
 }
 
 .manual-navigation{
   position: absolute;
-  width: 800px;
+  width: 80%;
   margin-top: -40px;
   display: flex;
   justify-content: center;
@@ -130,7 +134,7 @@ header > nav > ul > li > a{
 
 .navigation-auto{
   position: absolute;
-  width: 800px;
+  width: 80%;
   margin-top: 360px;
   display: flex;
   justify-content: center;
@@ -153,9 +157,33 @@ header > nav > ul > li > a{
   background-color: #FFF;
 }
 
+.header-main{
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  color: var(--primary-color);
+}
+
 main section h2{
   display: flex;
   justify-content: center;
+  color: var(--primary-color);
+}
+
+main section article h6{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main section article h6 section{
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+main section article h6 section img{
+  max-width: 20px;
 }
 
 main > .cards > article{
@@ -166,6 +194,11 @@ main > .cards > article{
 
 footer{
   border-top: #191a17 10px solid;
+}
+
+footer article h3{
+  color: var(--text-footer);
+  font-weight: 700;
 }
 
 footer section{
@@ -180,12 +213,13 @@ footer section ul{
 footer section ul li{
   padding: 5px 0;
   text-decoration: none;
+  color: var(--text-footer);
 }
 
 footer section ul li a{
   cursor: pointer;
   text-decoration: none;
-  color: inherit;
+  color: var(--text-footer);
 }
 
 .footer-text{
@@ -199,6 +233,11 @@ footer section ul li a{
 
 .footer-text > p{
   color: white;
+}
+
+#social-midia{
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .midia-icon{
