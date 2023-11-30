@@ -17,8 +17,8 @@
     <nav>
       <ul>
         <li><a href="">INÍCIO</a></li>
-        <li><a href="pages/sobre.html">SOBRE</a></li>
-        <li><a href="#curso">CURSO</a></li>
+        <li><a href="#sobre">SOBRE</a></li>
+        <li><a href="#cursos">CURSO</a></li>
         <li><a href="#social-midia">CONTATO</a></li>
       </ul>
     </nav>
@@ -62,56 +62,90 @@
       </article>
     </section>
 
-    <section>
+    <section class="cursos" id="cursos">
       <article>
         <section>
           <h1 class="title-filter">CURSOS</h1>
         </section>
         <section class="cont-filter">
-          <article><span>Online</span></article>
-          <article><span>Presencial</span></article>
-          <article><span>Sobre</span></article>
+          <article><a href="#online"><span>Online</span></a></article>
+          <article><a href="#presencial"><span>Presencial</span></a></article>
+          <article><a href="#sobre"><span>Sobre</span></a></article>
         </section>
       </article>
-      <article>
-        <section class="cards" id="imersoes">
+      <article id="online">
+        <h1>Online</h1>
+        <section class="cards">
           <article>
-            <img src="" alt="" />
-            <h3>3º Meeting Periimplanteam</h3>
+            <img src="img/card-online-1.png" alt="" />
+            <h3>Curso de Reabilitação Imediata em áreas estéticas</h3>
             <h6>
               <section>
-                <img src="img/calendario.png" alt=""><p>de 04/12 a 15/12</p>
-              </section>
-              <section>
-                <img src="img/relogio.png" alt=""><p>19:30</p>
+                <img src="img/calendario.png" alt=""><p>07/06/2024, 08/06/2024 e 09/06/2024</p>
               </section>
             </h6>
           </article>
           <article>
-            <img src="" alt="" />
+            <img src="img/card-online-2.png" alt="" />
             <h3>3º Meeting Periimplanteam</h3>
             <h6>
               <section>
-                <img src="img/calendario.png" alt=""><p>de 04/12 a 15/12</p>
-              </section>
-              <section>
-                <img src="img/relogio.png" alt=""><p>19:30</p>
-              </section>
-            </h6>
-          </article>
-          <article>
-            <img src="" alt="" />
-            <h3>3º Meeting Periimplanteam</h3>
-            <h6>
-              <section>
-                <img src="img/calendario.png" alt=""><p>de 04/12 a 15/12</p>
-              </section>
-              <section>
-                <img src="img/relogio.png" alt=""><p>19:30</p>
+                <img src="img/calendario.png" alt=""><p>04/12 ao dia 15/12 </p>
               </section>
             </h6>
           </article>
         </section>
+      </article>
+      <article id="presencial">
+        <h1>Presencial</h1>
+        <section class="cards">
+          <article>
+            <img src="img/card-1.png" alt="" />
+            <h3>Curso com 2 dias de prática em cadáveres frescos</h3>
+            <h6>
+              <section>
+                <img src="img/mapas-e-bandeiras.png" alt=""><p>HAC Alphaville</p>
+              </section>
+              <section>
+                <img src="img/calendario.png" alt=""><p>22/03/2024 a 24/03/2024</p>
+              </section>
+            </h6>
+          </article>
+          <article>
+            <img src="img/card-2.png" alt="" />
+            <h3>Imersão de Sedação consciente Curso de dois dias</h3>
+            <h6>
+              <section>
+                <img src="img/mapas-e-bandeiras.png" alt=""><p>Sede do instituto Periimplanteam em Sombrio</p>
+              </section>
+              <section>
+                <img src="img/calendario.png" alt=""><p>04/2024</p>
+              </section>
+            </h6>
+          </article>
+          <article>
+            <img src="img/card-3.png" alt="" />
+            <h3>Especialização VIP tripla certificação – Segunda turma</h3>
+            <h6>
+              <section>
+                <img src="img/mapas-e-bandeiras.png" alt=""><p>Sede do instituto Periimplanteam em Sombrio</p>
+              </section>
+              <section>
+                <img src="img/calendario.png" alt=""><p>05/2024</p>
+              </section>
+            </h6>
+          </article>
+        </section>
+      </article>
+    </section>
+
+    <section class="sobre" id="sobre">
+      <article>
+        <h1>Sobre</h1>
+        <p>Em 2015, após algumas conversas entre alguns colegas de mestrado, surgiu a idéia de começar a trabalhar algumas possibilidades de cursos de aperfeiçoamento para cirurgiões-dentistas já formados há algum tempo. O primeiro convite veio e o primeiro trabalho do grupo Periimplanteam foi em Balneário Camboriú-SC no mesmo ano de 2015. Logo depois começaram a surgir convites para levar esses cursos para iniciar parcerias em algumas instituições por todo Brasil, em cidades como Santarám-PA, Salvador-BA, São Luís-MA, Altamira-PA, Goiânia-GO, Sinop-MT, Porto Alegre-RS, Joinville-SC, Florianópolis-SC, entre outras. Até que em 2022, os fundadores do Grupo periimplanteam, os irmãos Tiago e Túlio Margute resolveram criar a sede própria do Instituto Periimplanteam em Sombrio-SC sua cidade natal, e em agosto de 2022, realizaram a inauguração com um curso de Imersão ministrado pelo amigo e grande prof. Raphael Monte Alto. Após alguns outros cursos já foram realizados e muitos outros projetos já estão em andamento para trazer conteúdo de qualidade, que percorre todo o Brasil, aqui para o Sul de Santa Catarina e o Norte do Rio Grande do Sul.</p>
+      </article>
+      <article class="image-sobre-container">
+        <img src="img/Img-Sobre.png" alt="">
       </article>
     </section>
 
@@ -123,7 +157,7 @@
         <h3>Conheça</h3>
         <section>
           <ul>
-            <li><a href="pages/sobre.html">Sobre</a></li>
+            <li><a href="#sobre">Sobre</a></li>
             <li><a href="pages/politica.html">Política de Privacidade</a></li>
           </ul>
         </section>
@@ -132,8 +166,8 @@
         <h3>Cursos</h3>
         <section>
           <ul>
-            <li><a href="">Online</a></li>
-            <li><a href="">Presencial</a></li>
+            <li><a href="#online">Online</a></li>
+            <li><a href="#presencial">Presencial</a></li>
           </ul>
         </section>
       </article>
