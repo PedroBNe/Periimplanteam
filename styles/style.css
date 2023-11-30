@@ -376,3 +376,30 @@ footer section ul li a{
 .midia-icon{
   max-width: 30px;
 }
+
+@media(max-width:768px){
+
+  .cont-filter{
+    gap: 20px;
+  }
+
+  .sobre{
+    flex-direction: column;
+  }
+
+  .sobre article{
+    max-width: 100%;
+  }
+
+  .sobre article h1{
+    display: flex;
+    justify-content: center;
+    margin-left: 0;
+  }
+
+  .sobre article p{
+    margin-right: 5%;
+    font-size: 18px;
+    line-height: 1.3;
+  }
+}
