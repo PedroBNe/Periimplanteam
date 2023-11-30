@@ -1,7 +1,11 @@
-*{
+* {
   padding: 0;
   margin: 0;
-  font-family:Arial, Helvetica, sans-serif
+  font-family: Arial, Helvetica, sans-serif
+}
+
+html{
+  scroll-behavior: smooth;
 }
 
 html{
@@ -22,7 +26,7 @@ body{
   --text-footer: #357e79;
 }
 
-header{
+header {
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -32,43 +36,43 @@ header{
   background-color: transparent;
 }
 
-.header-aplicado{
+.header-aplicado {
   background-color: var(--background-header);
 }
 
-.logo-header{
+.logo-header {
   display: flex;
   align-items: center;
   margin-left: 20px;
 }
 
-.logo-header img{
+.logo-header img {
   height: 100%;
 }
 
-header > nav{
+header>nav {
   display: flex;
   align-items: center;
 }
 
-header > nav > ul {
+header>nav>ul {
   display: flex;
   list-style: none;
 }
 
-header > nav > ul > li {
+header>nav>ul>li {
   padding-right: 20px;
   color: var(--white);
   font-weight: bold;
   cursor: pointer;
 }
 
-header > nav > ul > li > a{
+header>nav>ul>li>a {
   text-decoration: none;
   color: inherit;
 }
 
-.slider{
+.slider {
   margin: 0 auto;
   margin-bottom: 30px;
   width: 100%;
@@ -76,28 +80,28 @@ header > nav > ul > li > a{
   overflow: hidden;
 }
 
-.slides{
+.slides {
   width: 400%;
   height: 100%;
   display: flex;
 }
 
-.slides input{
+.slides input {
   display: none;
 }
 
-.slide{
+.slide {
   width: 25%;
   position: relative;
   transition: 1s;
 }
 
-.slide img{
+.slide img {
   width: 100%;
   height: 100%;
 }
 
-.manual-navigation{
+.manual {
   position: absolute;
   width: 100%;
   margin-top: -40px;
@@ -105,7 +109,7 @@ header > nav > ul > li > a{
   justify-content: center;
 }
 
-.manual-btn{
+.manual-btn {
   border: 2px solid #FFF;
   padding: 5px;
   border-radius: 10px;
@@ -113,31 +117,31 @@ header > nav > ul > li > a{
   transition: 1s;
 }
 
-.manual-btn:not(:last-child){
+.manual-btn:not(:last-child) {
   margin-right: 40px;
 }
 
-.manual-btn:hover{
+.manual-btn:hover {
   background-color: #FFF;
 }
 
-#radio1:checked ~ .first{
+#radio1:checked~.first {
   margin-left: 0;
 }
 
-#radio2:checked ~ .first{
+#radio2:checked~.first {
   margin-left: -25%;
 }
 
-#radio3:checked ~ .first{
+#radio3:checked~.first {
   margin-left: -50%;
 }
 
-#radio4:checked ~ .first{
+#radio4:checked~.first {
   margin-left: -75%;
 }
 
-.navigation-auto article{
+.auto article {
   border: 2px solid #20a6ff;
   padding: 5px;
   border-radius: 10px;
@@ -145,7 +149,7 @@ header > nav > ul > li > a{
   transition: 1s;
 }
 
-.navigation-auto{
+.auto {
   position: absolute;
   width: 100%;
   margin-top: 535px;
@@ -153,24 +157,27 @@ header > nav > ul > li > a{
   justify-content: center;
 }
 
-.navigation-auto article:not(:last-child){
+.auto article:not(:last-child) {
   margin-right: 40px;
 }
 
-#radio1:checked ~ .navigation-auto .auto-btn1{
-  background-color: #FFF;
-}
-#radio2:checked ~ .navigation-auto .auto-btn2{
-  background-color: #FFF;
-}
-#radio3:checked ~ .navigation-auto .auto-btn3{
-  background-color: #FFF;
-}
-#radio4:checked ~ .navigation-auto .auto-btn4{
+#radio1:checked~.auto .auto-btn1 {
   background-color: #FFF;
 }
 
-.title-filter{
+#radio2:checked~.auto .auto-btn2 {
+  background-color: #FFF;
+}
+
+#radio3:checked~.auto .auto-btn3 {
+  background-color: #FFF;
+}
+
+#radio4:checked~.auto .auto-btn4 {
+  background-color: #FFF;
+}
+
+.title-filter {
   display: flex;
   justify-content: center;
   color: var(--primary-color);
@@ -178,50 +185,50 @@ header > nav > ul > li > a{
   font-weight: 800;
 }
 
-.cont-filter{
+.cont-filter {
   display: flex;
   justify-content: center;
   gap: 200px;
   margin-top: 10px;
 }
 
-.cont-filter > article{
+.cont-filter>article {
   width: 100%;
   max-width: 180px;
   border-radius: 10px;
   border: 1px solid #00877b;
   background-color: #fff;
   padding: 15px 0;
-  text-align: center!important;
+  text-align: center !important;
   margin-bottom: 15px;
   cursor: pointer;
 }
 
-.cont-filter > article a {
+.cont-filter>article a {
   text-decoration: none;
 }
 
-.cont-filter > article span{
+.cont-filter>article span {
   color: #00877b;
   font-weight: 600;
   font-size: 1.2rem;
 }
 
-.cont-filter > article:hover{
+.cont-filter>article:hover {
   background-color: #00877b;
   transition: 0.5s;
 }
 
-.cont-filter > article:hover span{
+.cont-filter>article:hover span {
   transition: 0.5s;
   color: #FFF;
 }
 
-.cursos > article{
+.cursos>article {
   margin: 20px auto;
 }
 
-.cursos > article > h1{
+.cursos>article>h1 {
   display: flex;
   justify-content: center;
   color: var(--second-color);
@@ -230,70 +237,71 @@ header > nav > ul > li > a{
   margin-bottom: 30px;
 }
 
-main section article h6{
+main section article h6 {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-main section article h6 section{
+main section article h6 section {
   display: flex;
   align-items: center;
   gap: 3px;
 }
 
-main section article h6 section img{
+main section article h6 section img {
   max-width: 20px;
 }
 
-.cards{
+.cards {
   display: flex;
   justify-content: center;
   gap: 10%;
 }
 
-.cards > article{
+.cards>article {
   max-width: 20%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.cards > article > a > img{
+.cards>article>a>img {
   max-width: 100%;
   border-radius: 10px;
 }
 
-.cards > article > h3{
+.cards>article>h3 {
   text-align: center;
 }
 
-.sobre{
+.sobre {
   display: flex;
   margin-top: 50px;
   margin-bottom: 40px;
 }
 
-.sobre article{
+.sobre article {
   max-width: 50%;
 }
 
-.sobre > article > p{
+.sobre>article>p {
   font-size: 20px;
   font-weight: 500;
   margin-left: 5%;
   line-height: 1.5;
   margin-bottom: 50px;
-  color: #353535;;
+  color: #353535;
+  ;
 }
 
-.sobre > .image-sobre-container{
-  
+.sobre>.image-sobre-container {
+
   display: flex;
   justify-content: center;
 }
 
-.sobre > article > h1{
+.sobre>article>h1 {
   color: var(--second-color);
   font-size: 40px;
   font-weight: 800;
@@ -301,11 +309,11 @@ main section article h6 section img{
   margin-left: 5%;
 }
 
-.sobre > article > img{
+.sobre>article>img {
   max-width: 80%;
 }
 
-.privacidade > h1{
+.privacidade>h1 {
   display: flex;
   justify-content: center;
   color: var(--second-color);
@@ -315,7 +323,7 @@ main section article h6 section img{
   margin-left: 5%;
 }
 
-.privacidade > p{
+.privacidade>p {
   font-size: 20px;
   font-weight: 500;
   margin-left: 5%;
@@ -324,42 +332,42 @@ main section article h6 section img{
   color: #353535;
 }
 
-footer{
+footer {
   background-color: var(--background-header);
 }
 
-.logo-footer{
+.logo-footer {
   max-height: 110px;
 }
 
-footer article h3{
+footer article h3 {
   color: #FFF;
   font-weight: 700;
 }
 
-footer section{
+footer section {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
-footer section ul{
+footer section ul {
   list-style: none;
 }
 
-footer section ul li{
+footer section ul li {
   padding: 5px 0;
   text-decoration: none;
   color: #FFF;
 }
 
-footer section ul li a{
+footer section ul li a {
   cursor: pointer;
   text-decoration: none;
   color: #FFF;
 }
 
-.footer-text{
+.footer-text {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -368,118 +376,118 @@ footer section ul li a{
   background-color: var(--background-footer);
 }
 
-.footer-text > p{
+.footer-text>p {
   color: white;
 }
 
-#social-midia{
+#social-midia {
   display: flex;
   justify-content: space-evenly;
 }
 
-.midia-icon{
+.midia-icon {
   max-width: 30px;
 }
 
-@media(max-width:768px){
+@media(max-width:768px) {
 
-  .slider{
+  .slider {
     max-height: 60%;
     height: 345px;
   }
 
-  .navigation-auto{
+  .auto {
     margin-top: 305px;
   }
 
-  .title-filter{
+  .title-filter {
     font-size: 30px;
   }
 
-  .cont-filter > article{
+  .cont-filter>article {
     max-width: 90px;
   }
 
-  .cont-filter > article span{
+  .cont-filter>article span {
     font-size: 1rem;
   }
 
-  .cursos > article > h1 {
+  .cursos>article>h1 {
     font-size: 30px;
   }
 
-  .cont-filter{
+  .cont-filter {
     gap: 20px;
   }
 
-  .sobre{
+  .sobre {
     flex-direction: column;
   }
 
-  .sobre article{
+  .sobre article {
     max-width: 100%;
   }
 
-  .sobre article h1{
+  .sobre article h1 {
     display: flex;
     justify-content: center;
     margin-left: 0;
   }
 
-  .sobre article p{
+  .sobre article p {
     margin-right: 5%;
     font-size: 18px;
     line-height: 1.3;
   }
 
-  .cards > article{
+  .cards>article {
     max-width: 25%;
   }
-  
+
 }
 
-@media(max-width: 425px){
-  header{
+@media(max-width: 425px) {
+  header {
     height: 50px;
   }
 
-  .logo-header{
+  .logo-header {
     margin-left: 0;
   }
 
-  .cards{
+  .cards {
     flex-direction: column;
     align-items: center;
     gap: 15px;
   }
 
-  .cards > article{
+  .cards>article {
     max-width: 60%;
   }
 
-  .sobre article p{
+  .sobre article p {
     font-size: 15px;
   }
 
-  footer section{
+  footer section {
     flex-direction: column;
     gap: 20px;
   }
 
-  footer article h3{
+  footer article h3 {
     display: flex;
     justify-content: center;
   }
 
-  footer section ul li{
+  footer section ul li {
     display: flex;
     justify-content: center;
   }
 }
 
-@media(max-width: 400px){
+@media(max-width: 400px) {
 
-  header > nav > ul > li{
+  header>nav>ul>li {
     padding-right: 5px;
     font-size: small;
   }
